@@ -41,9 +41,9 @@ function updateLanguages(profileData) {
 }
 
 function updatePortifolio(profileData) {
-	const portifolio = document.getElementById("profile.portifolio");
+	const portfolio = document.getElementById("profile.portfolio");
 
-	portifolio.innerHTML = profileData.portifolio.map(project => {
+	portfolio.innerHTML = profileData.portfolio.map(project => {
 		return `
 		<li>
 			<h3 ${project.github ? 'class="github"' : ''}>${project.name}</h3>
